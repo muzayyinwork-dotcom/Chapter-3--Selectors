@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+  </head>
+  <style>
+    body {
+      background: #0f172a;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    section {
+      background: #1e293b;
+      border: 2px solid #475569;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    section h1 {
+      color: #06b6d4;
+    }
+    section p {
+      color: #cbd5e1;
+    }
+    header {
+      background: #1e293b;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 1px solid #475569;
+    }
+    header h1 {
+      color: #f8fafc;
+    }
+    header p {
+      color: #cbd5e1;
+    }
+    .card {
+      background: #334155;
+      border: 2px solid #475569;
+      padding: 20px;
+      margin: 10px;
+    }
+    .card h2 {
+      color: #f8fafc;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    #id-p {
+      color: #8b5cf6;
+    }
+    input[type="text"] {
+      border: 2px solid #06b6d4;
+    }
+    input[type="email"] {
+      border: 2px solid #8b5cf6;
+    }
+    button[type="submit"] {
+      background: #22c55e;
+      color: white;
+    }
+    input {
+      background: #334155;
+      color: #f8fafc;
+      padding: 10px;
+    }
+    div p {
+      color: #06b6d4;
+    }
+    div {
+      background: #334155;
+      border: 2px solid #475569;
+      padding: 20px;
+    }
+    div > p {
+      color: #8b5cf6;
+    }
+    h1 + p {
+      color: #06b6d4;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>CSS Selector Practice</h1>
+      <p>
+        Learn and practice different CSS selectors by styling elements based on
+        their tags, classes, IDs, attributes, and relationships.
+      </p>
+    </header>
+
+    <section>
+      <h1>Element Selector</h1>
+      <p>
+        Element selectors target HTML elements directly using their tag names.
+      </p>
+      <p>For example, a p selector can style every paragraph on a page.</p>
+    </section>
+    <section>
+      <h1>Class Selector</h1>
+      <article class="card">
+        <h2>HTML</h2>
+        <p>HTML provides the structure and content of a webpage.</p>
+      </article>
+      <article class="card">
+        <h2>CSS</h2>
+        <p>CSS controls the appearance and layout of a webpage.</p>
+      </article>
+      <article class="card">
+        <h2>JavaScript</h2>
+        <p>JavaScript adds functionality and interaction to webpages.</p>
+      </article>
+    </section>
+    <section>
+      <h1>ID Selector</h1>
+      <p id="id-p">
+        An ID selector targets one specific element using a unique ID.
+      </p>
+    </section>
+    <section>
+      <h1>Attribute Selector</h1>
+      <form>
+        <input type="text" placeholder="Enter your name" />
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section>
+      <h1>Descendant Selector</h1>
+      <div>
+        <h2>Understanding Descendants</h2>
+        <p>
+          A descendant selector targets an element located anywhere inside
+          another element, even when it is nested several levels deep.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h1>Child Selector</h1>
+      <div>
+        <p>This paragraph is a direct child of the container.</p>
+        <div>
+          <h1>Nested Paragraph</h1>
+          <p>This paragraph is nested inside another element.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>Adjacent Sibling Selector</h1>
+      <p>This paragraph comes immediately after the heading.</p>
+      <p>This paragraph does not come immediately after the heading.</p>
+    </section>
+  </body>
+</html>
